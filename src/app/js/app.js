@@ -38,6 +38,10 @@ angular.module('App', [])
         $scope.questions = [];
         $scope.numQuestions = 0;
         $scope.maxNumOptions = 0;
+        $scope.numWrongAnswers = 0;
+        $scope.numRightAnswers = 0;
+        $scope.wrongAnswersPercent = '10%';
+        $scope.rightAnswersPercent = '10%';
 
         $scope.currentQuestion = 0;
         $scope.NUM_QUESTIONS = 30;
@@ -45,6 +49,8 @@ angular.module('App', [])
         $scope.timer = null;
         $scope.timePercent = '0%';
         $scope.MAX_TIME = 20 * 60;   // 20 minutes
+
+        $scope.done = false;
 
         $scope.init = function() {
             var height = $(document).height() - 100;
@@ -113,7 +119,6 @@ angular.module('App', [])
                     $scope.seconds = 0;
                 }
                 $scope.timePercent = (60 * $scope.minutes + $scope.seconds) * 100 / $scope.MAX_TIME + '%';
-                console.log($scope.timePercent);
                 $scope.createTimer();
             }, 1000);
         };
@@ -130,5 +135,17 @@ angular.module('App', [])
             return format($scope.minutes) + ':' + format($scope.seconds);
         };
 
-        $scope.calculatePercent
+        /**
+         * Finish button click handler
+         */
+        $scope.finish = function() {
+            // Clear the timer
+            $timeout.cancel($scope.timer);
+            $scope.timer = null;
+
+            $http.get('data/answers.json').success(function(response) {
+                $scope.done = true;
+
+            });
+        };
     });

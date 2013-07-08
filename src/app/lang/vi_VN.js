@@ -7,6 +7,8 @@ window.lang.vi_VN = {
     'Finish': 'Kết Thúc',
     'Option Number': 'Phương Án',
     'Option Content': 'Nội Dung',
+    'Right Answers': 'câu đúng',
     'Your Choice': 'Bạn Chọn',
-    'Question': 'Câu hỏi'
+    'Question': 'Câu hỏi',
+    'Wrong Answers': 'câu sai'
 };

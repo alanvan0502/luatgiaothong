@@ -13,13 +13,31 @@
         <div class="row-fluid">
             <div class="span3 app-option">
                 <!-- time: -->
-                <div class="app-clock">
+                <div class="app-clock app-progressbar">
                     <div class="progress progress-danger progress-striped">
                         <div class="bar" ng-style="{ width: timePercent }"></div>
                         <span>{{ formatTime(); }}</span>
                     </div>
                 </div>
                 <!-- :time -->
+
+                <!-- result: -->
+                <div>
+                    <div class="app-progressbar">
+                        <div class="progress progress-warning">
+                            <div class="bar" ng-style="{ width: wrongAnswersPercent }"></div>
+                            <span>{{ numWrongAnswers }}/{{ numQuestions }} {{ 'Wrong Answers' | i18n }}</span>
+                        </div>
+                    </div>
+
+                    <div class="app-progressbar">
+                        <div class="progress progress-success">
+                            <div class="bar" ng-style="{ width: rightAnswersPercent }"></div>
+                            <span>{{ numRightAnswers }}/{{ numQuestions }} {{ 'Right Answers' | i18n }}</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- :result -->
 
                 <table class="table table-bordered">
                     <thead>
@@ -46,7 +64,7 @@
                     </tbody>
                 </table>
                 <div class="text-center">
-                    <button class="btn btn-primary btn-large">{{ 'Finish' | i18n }}</button>
+                    <button class="btn btn-primary btn-large" ng-click="finish()">{{ 'Finish' | i18n }}</button>
                 </div>
             </div>
 
@@ -61,21 +79,21 @@
 
                         <table class="table table-stripped" id="choices">
                             <thead>
-                            <tr>
-                                <th>{{ 'Option Number' | i18n }}</th>
-                                <th>{{ 'Option Content' | i18n }}</th>
-                                <th>{{ 'Your Choice' | i18n }}</th>
-                                <th>{{ 'Correct Answer' | i18n }}</th>
-                            </tr>
+                                <tr>
+                                    <th>{{ 'Option Number' | i18n }}</th>
+                                    <th>{{ 'Option Content' | i18n }}</th>
+                                    <th>{{ 'Your Choice' | i18n }}</th>
+                                    <th>{{ 'Correct Answer' | i18n }}</th>
+                                </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="option in questions[currentQuestion].options">
-                                <td><span class="badge badge-info">{{ $index + 1 }}</span></td>
-                                <td>{{ option }}</td>
-                                <td><i class="icon-ok" ng-show="questions[currentQuestion]['option_' + $index] == true"></i></td>
-                                <td></td>
-                            </tr>
-                            </tbody>
+                                <tr ng-repeat="option in questions[currentQuestion].options">
+                                    <td><span class="badge badge-info">{{ $index + 1 }}</span></td>
+                                    <td>{{ option }}</td>
+                                    <td><i class="icon-ok" ng-show="questions[currentQuestion]['option_' + $index] == true"></i></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
                         </table>
                     </div>
                 </div>
