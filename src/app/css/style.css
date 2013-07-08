@@ -1,0 +1,9 @@
+.app-clock .progress { position: relative; height: 30px; line-height: 30px; }
+.app-clock .progress .bar { position: absolute; height: 30px; line-height: 30px; z-index: 1; }
+.app-clock .progress span { color: #006dcc; font-size: 25px; position: absolute; width: 100%; text-align: center; z-index: 2; }
+
+.app-question table { margin-top: 30px; }
+.app-question .popover { display: block; max-width: none; position: relative; }
+
+.app-option ul { list-style: none; margin: 0; }
+.app-option li { display: inline-block; text-align: center; width: 30px; }

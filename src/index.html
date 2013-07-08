@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="app/css/style.css"/>
+    <script type="text/javascript" src="vendor/jquery/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/angular/angular.1.0.7.min.js"></script>
+    <script type="text/javascript" src="app/lang/vi_VN.js"></script>
+    <script type="text/javascript" src="app/js/app.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 60px;">
+        <div ng-view></div>
+    </div>
+</body>
+</html>

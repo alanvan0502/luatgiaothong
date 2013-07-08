@@ -1,0 +1,77 @@
+{
+    "questions": [
+        {
+            "number": 1,
+            "title": "Khái niệm 'đường bộ' được hiểu như thế nào là đúng?",
+            "content": "Đường bộ gồm:",
+            "options": [
+                "Đường, cầu đường bộ.",
+                "Hầm đường bộ, bến phà đường bộ.",
+                "Đường, cầu đường bộ, hầm đường bộ, bến phà đường bộ và các công trình phụ trợ khác."
+            ],
+            "answers": []
+        },
+        {
+            "number": 2,
+            "title": "Khái niệm 'công trình đường bộ' được hiểu như thế nào là đúng?",
+            "content": "Công trình đường bộ gồm:",
+            "options": [
+                "Đường bộ, nơi dừng xe, đỗ xe trên đường bộ, đèn tín hiệu, biển báo hiệu, vạch kẻ đường, cọc tiêu.",
+                "Rào chắn, đảo giao thông, dải phân cách, cột cây số, tường, kè, hệ thống thoát nước, trạm kiểm tra trọng tải xe, trạm thu phí và các công trình, thiết bị phụ trợ khác.",
+                "Đường bộ, nơi dừng xe, đỗ xe trong khu vực nhà ga đường sắt, cảng hàng không.",
+                "Đường bộ, nơi dừng xe, đỗ xe trong khu vực nhà ga đường sắt, cảng hàng không."
+            ],
+            "answers": []
+        },
+        {
+            "number": 3,
+            "title": "'Vạch kẻ đường' được hiểu thế nào là đúng?",
+            "options": [
+                "Vạch kẻ đường là vạch chỉ sự phân chia làn đường, vị trí hoặc hướng đi, vị trí dừng lại.",
+                "Vạch kẻ đường là vạch chỉ sự phân biết vị trí dừng, đỗ trên đường.",
+                "Tất cả ý nêu trên."
+            ],
+            "answers": []
+        },
+        {
+            "number": 4,
+            "title": "Khái nlệm 'phần đường xe chạy' được hiểu như thể nào là đúng?",
+            "options": [
+                "Là phần của đường bộ được sử dụng cho các phương tiện giao thông qua lại.",
+                "Là phần đường bộ được sử dụng cho các phương tiện giao thông qua lại, dải đất dọc hai bên đường để bảo đãm an toàn giao thông.",
+                "Là phần đường bộ được sử dụng cho các phương tiện giao thông qua lại, các công trình, thiết bị phụ trợ khác và dải đất dọc hai bên đường để bảo đảm an toàn giao thông."
+            ],
+            "answers": []
+        },
+        {
+            "number": 5,
+            "title": "Khái niệm 'làn đường' được hlểu như thể nào là đúng?",
+            "options": [
+                "Là một phần của đường được chia theo chiều ngang của đường, có bề rộng đủ cho xe đỗ an toàn.",
+                "Là một phần của đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn.",
+                "Cả 2 ý trên"
+            ],
+            "answers": []
+        },
+        {
+            "number": 6,
+            "title": "Khái nlệm 'khổ giới hạn của đường bộ' được hiểu như thế nào là đúng?",
+            "options": [
+                "Là khoảng trống có kích thước giới hạn về chiều cao, chiều rộng của đường, cầu, bến phà, hầm đường bộ để các xe kể cả hàng hóa xếp trên xe đi qua được an toàn.",
+                "Là khoảng trống có kích thước giới hạn về chìều rộng của dưởng, cầu, bến phà, hầm trên đường bộ để các xe kể cả hàng hóa xếp trên xe đi qua được an toàn.",
+                "Là khoảng trống có kích thước giới hạn về chiều cao của cầu, bến phà, hầm trên đường bộ để các xe đi qua được an toàn."
+            ],
+            "answers": []
+        },
+        {
+            "number": 7,
+            "title": "Khái nlệm 'đường phố' được hiểu như thế nào là đúng?",
+            "options": [
+                "Đường phổ là đường đô thị, gồm lòng đường và hè phố.",
+                "Đường phổ là đường bộ ngoài đô thị có lòng đường đủ rộng cho các phương tiện giao thông qua lại.",
+                "Cả hai ý nêu trên."
+            ],
+            "answers": []
+        }
+    ]
+}
