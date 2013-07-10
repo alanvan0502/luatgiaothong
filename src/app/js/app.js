@@ -26,7 +26,6 @@ angular.module('App', [])
 //    }])
     .controller('IndexController', function($rootScope, $scope) {
         $scope.init = function() {
-//            $('#start').css('margin-top', '100px');
         };
     })
     .controller('ExamController', function($rootScope, $scope, $http, $timeout) {
@@ -37,18 +36,26 @@ angular.module('App', [])
         $scope.allQuestions = [];
         $scope.questions = [];
         $scope.numQuestions = 0;
-        $scope.maxNumOptions = 0;
         $scope.numWrongAnswers = 0;
         $scope.numRightAnswers = 0;
 
         $scope.currentQuestionIndex = 0;
         $scope.NUM_QUESTIONS = 30;
+        $scope.QUESTION_RANGES = [
+//            { range: '1..255', total: 9 },
+//            { range: '256..450', total: 9 }
+            { range: '1..4', total: 2 },
+            { range: '5..9', total: 3 },
+            { range: '10..15', total: 3 }
+        ];
 
         $scope.timer = null;
         $scope.timePercent = '0%';
         $scope.MAX_TIME = 20 * 60;   // 20 minutes
 
         $scope.done = false;
+
+        // --- PUBLIC METHODS ---
 
         $scope.init = function() {
             var height = $(document).height() - 100;
@@ -57,11 +64,42 @@ angular.module('App', [])
             $http.get('data/questions.json').success(function(response) {
                 $scope.allQuestions = response.questions;
                 $scope.generateQuestions();
-                $scope.loading   = false;
+                $scope.loading = false;
+                $scope.enableShortcut();
             });
-
-            $scope.enableShortcut();
         };
+
+        $scope.gotoQuestion = function(index) {
+            $scope.currentQuestionIndex = index;
+        };
+
+        $scope.chooseAnswer = function($e, questionIndex, optionIndex) {
+            $scope.gotoQuestion(questionIndex);
+            $scope.questions[questionIndex]['option_' + optionIndex] = $e.target.checked;
+        };
+
+        $scope.formatTime = function() {
+            var format = function(input) {
+                return ((input + '').length > 1) ? ('' + input) : ('0' + input);
+            }
+            return format($scope.minutes) + ':' + format($scope.seconds);
+        };
+
+        /**
+         * Finish button click handler
+         */
+        $scope.finish = function() {
+            // Clear the timer
+            $timeout.cancel($scope.timer);
+            $scope.timer = null;
+
+            $http.get('data/answers.json').success(function(response) {
+                $scope.done = true;
+
+            });
+        };
+
+        // --- PRIVATE METHODS ---
 
         $scope.enableShortcut = function() {
             $(document).on('keyup', function(e) {
@@ -80,13 +118,13 @@ angular.module('App', [])
                         }
                         break;
                     case 39:    // Right arrow
-                        if ($scope.currentQuestionIndex < $scope.NUM_QUESTIONS - 1) {
+                        if ($scope.currentQuestionIndex < $scope.numQuestions - 1) {
                             $scope.currentQuestionIndex++;
                             $scope.$apply();
                         }
                         break;
                     case 40:    // Bottom arrow
-                        if ($scope.currentQuestionIndex < $scope.NUM_QUESTIONS - 3) {
+                        if ($scope.currentQuestionIndex < $scope.numQuestions - 2) {
                             $scope.currentQuestionIndex = $scope.currentQuestionIndex + 2;
                             $scope.$apply();
                         }
@@ -114,27 +152,6 @@ angular.module('App', [])
             });
         };
 
-        $scope.gotoQuestion = function(index) {
-            $scope.currentQuestionIndex = index;
-        };
-
-        /**
-         * Generate random questions
-         */
-        $scope.generateQuestions = function() {
-            $scope.questions = $scope.allQuestions;
-            $scope.numQuestions = $scope.questions.length;
-            var maxNumOptions = 0;
-            for (var i = 0; i < $scope.numQuestions; i++) {
-                maxNumOptions = Math.max(maxNumOptions, $scope.questions[i].options.length);
-            }
-
-            $scope.maxNumOptions = new Array(maxNumOptions);
-
-            // Start timer
-            $scope.createTimer();
-        };
-
         $scope.createTimer = function() {
             $scope.timer = $timeout(function() {
                 $scope.seconds++;
@@ -147,29 +164,46 @@ angular.module('App', [])
             }, 1000);
         };
 
-        $scope.chooseAnswer = function($e, questionIndex, optionIndex) {
-            $scope.gotoQuestion(questionIndex);
-            $scope.questions[questionIndex]['option_' + optionIndex] = $e.target.checked;
-        };
+        /**
+         * Generate random questions
+         */
+        $scope.generateQuestions = function() {
+            $scope.questions = [];
 
-        $scope.formatTime = function() {
-            var format = function(input) {
-                return ((input + '').length > 1) ? ('' + input) : ('0' + input);
+            var i, from, to, total, array;
+            for (i in $scope.QUESTION_RANGES) {
+                from  = $scope.QUESTION_RANGES[i].range.split('..')[0];
+                to    = $scope.QUESTION_RANGES[i].range.split('..')[1];
+                total = $scope.QUESTION_RANGES[i].total;
+
+                array = $scope.allQuestions.slice(from, to);
+                array = $scope.shuffleArray(array);
+                array = array.slice(0, total);
+
+                $scope.questions = $scope.questions.concat(array);
             }
-            return format($scope.minutes) + ':' + format($scope.seconds);
+
+            $scope.numQuestions = $scope.questions.length;
+
+            // Start timer
+            $scope.createTimer();
         };
 
         /**
-         * Finish button click handler
+         * Shuffle an array
+         * @param Array input
+         * @return Array
          */
-        $scope.finish = function() {
-            // Clear the timer
-            $timeout.cancel($scope.timer);
-            $scope.timer = null;
-
-            $http.get('data/answers.json').success(function(response) {
-                $scope.done = true;
-
-            });
+        $scope.shuffleArray = function(array) {
+            var tmp, current, top = array.length;
+            if (top) {
+                while(--top) {
+                    current        = Math.floor(Math.random() * (top + 1));
+                    tmp            = array[current];
+                    array[current] = array[top];
+                    array[top]     = tmp;
+                }
+            }
+            return array;
         };
     });

@@ -14,14 +14,14 @@
             <div class="span3">
                 <!-- tips: -->
                 <div class="alert alert-info">
-                    Sử dụng các phím mũi tên (&larr;, &rarr;, &uarr;, &darr;) để di chuyển câu hỏi. Nhấn các phím số (1 &rarr; 9) để chọn hoặc huỷ phương án trả lời.
+                    <i class="icon-lightbulb icon-2x"></i> Sử dụng các phím mũi tên (&larr;, &rarr;, &uarr;, &darr;) để di chuyển câu hỏi. Nhấn các phím số (1 &rarr; 9) để chọn hoặc huỷ phương án trả lời.
                 </div>
                 <!-- :tips -->
 
                 <!-- answers: -->
                 <ul class="app-answers">
                     <li ng-repeat="question in questions" ng-class="{ 'app-active': currentQuestionIndex == $index }">
-                        <span>{{ $index + 1 }}</span>
+                        <span><a href="javascript: void(0);" ng-click="gotoQuestion($index)">{{ $index + 1 }}</a></span>
                         <ul class="inline">
                             <li ng-repeat="option in question.options">
                                 <small>{{ $index + 1 }}</small>
@@ -58,20 +58,20 @@
 
                             <table class="table table-bordered">
                                 <thead>
-                                <tr>
-                                    <th style="width: 50px;">Phương Án</th>
-                                    <th>Nội Dung</th>
-                                    <th style="width: 50px;">Bạn Chọn</th>
-                                    <th style="width: 50px;">Đáp Án</th>
-                                </tr>
+                                    <tr>
+                                        <th style="width: 50px;">Phương Án</th>
+                                        <th>Nội Dung</th>
+                                        <th style="width: 50px;">Bạn Chọn</th>
+                                        <th style="width: 50px;">Đáp Án</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                <tr ng-repeat="option in questions[currentQuestionIndex].options">
-                                    <td style="text-align: center"><span class="badge badge-info">{{ $index + 1 }}</span></td>
-                                    <td>{{ option }}</td>
-                                    <td><i class="icon-check" ng-show="questions[currentQuestionIndex]['option_' + $index] == true"></i></td>
-                                    <td></td>
-                                </tr>
+                                    <tr ng-repeat="option in questions[currentQuestionIndex].options">
+                                        <td style="text-align: center"><span class="badge badge-info">{{ $index + 1 }}</span></td>
+                                        <td>{{ option }}</td>
+                                        <td><i class="icon-check" ng-show="questions[currentQuestionIndex]['option_' + $index] == true"></i></td>
+                                        <td></td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>

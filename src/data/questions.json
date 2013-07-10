@@ -65,6 +65,74 @@
                 "Đường phổ là đường bộ ngoài đô thị có lòng đường đủ rộng cho các phương tiện giao thông qua lại.",
                 "Cả hai ý nêu trên."
             ]
+        },
+        {
+            "number": 8,
+            "title": "Khái niệm 'dải phân cách' được hiểu như thế nào là đúng?",
+            "options": [
+                "Là bộ phận của đường để phần, chia mặt đường thành hai chiều Xe chạy riêng biệt hoặc để phân chia phần đường của Xe cơ giới và Xe thô Sơ.",
+                "Là bộ phận của đường để xác định ranh giới của đất dành cho đường bộ theo chiều ngang của đường.",
+                "Là bộ phận của đường để ngăn cách không cho các loại Xe vào những nơi không được phép."
+            ]
+        },
+        {
+            "number": 9,
+            "title": "Dải phân cách trên đường bộ có những loại nào?",
+            "options": [
+                "Loại cố định.",
+                "Loại di động."
+            ]
+        },
+        {
+            "number": 10,
+            "title": "Khái niệm 'đường cao tốc' được hiểu như thể nào là đúng?",
+            "options": [
+                "Là đuờng dành cho xe cơ giới, có dải phàn cách chia đường cho Xe chạy hai chiều riêng biệt; không giao nhau cùng mức với một hoặc các đường khác; được bố trí đầy đủ trang thiết bị phục vụ, bảo đảm giao thông liên tục, an toàn, rút ngắn thời gian hành trình và chỉ cho xe ra, vào đỗ những điểm nhất định.",
+                "Là đường chỉ dành cho Xe cơ giới chạy với tốc độ cao, có dải phàn cách chia đường cho Xe chạy hai chiều ngược nhau riêng biệt; không giao cắt cùng mức với đường khác; bố trí đầy đủ trang thiết bị phục vụ bảo đảm giao thông, an toàn và rút ngắn thời gian hành trình."
+            ]
+        },
+        {
+            "number": 11,
+            "title": "Khái niệm 'đường chính' được hiểu như thế nào là đúng?",
+            "options": [
+                "Ðường chính là đường bảo đảm giao thông chủ yếu trong khu vực.",
+                "Ðường chính là đường quốc lộ được đặt tên, số hiệu do cơ quan có thẩm quyền phân loại và quyết định.",
+                "Đường chính là đường trong đô thị hoặc đường tĩnh."
+            ]
+        },
+        {
+            "number": 12,
+            "title": "Khái niệm 'đường ưu tiên' được hiểu như thế nào là đúng?",
+            "options": [
+                "Ðường ưu tiên là đường mà trên đó phương tiện tham gia giao thông đường bộ phải nhường đường cho các phương tiện đến từ hướng khác khi qua nơi đường giao nhau, có thể được cắm biển báo hiệu đuờng ưu tiên.",
+                "Đường ưu tiên là đường mà trên đó phương tiện tham gia giao thông đường bộ được các phương tiện đến từ hướng khác nhường đường khi qua nơi đường giao nhau, được cắm biển báo hiệu đường ưu tiên. Ðường ưu tiên là đường chỉ dành cho một số loại phương tiện tham gia giao thông, được cắm biển báo hiệu đường ưu tiên."
+            ]
+        },
+        {
+            "number": 13,
+            "title": "'Phương tlện giao thông đường bộ' gồm những loạl nào?",
+            "options": [
+                "Phương tiện giao thông cơ giới đường bộ, Phương tiện giao thông thô sơ đường bộ.",
+                "Phương tiện giao thông thô sơ đường bộ; phương tiện giao thông cơ giới đường bộ và xe máy chuyên dùng.",
+                "Cả hai ý nêu trên."
+            ]
+        },
+        {
+            "number": 14,
+            "title": "Khái niệm 'phương tlện giao thông cơ giới đường bộ' được hlểu thể nào là đúng?",
+            "options": [
+                "Gồm Xe ô tô; máy kéo; Xe mô tô hai bánh; xe mô tô ba bánh; Xe gắn máy; Xe cơ giới dùng cho người khuyết tật và Xe máy chuyên dùng.",
+                "Gồm Xe ô tô; máy kéo; rơ moóc hoặc sơ mi rơ moóc được kéo bởi Xe ô tô, máy kéo; xe mô tô hai bánh; xe mô tô ba bánh, Xe gắn máy (kể cả xe máy điện) và các loại Xe tương tự."
+            ]
+        },
+        {
+            "number": 15,
+            "title": "Khái niệm 'phương tlện giao thông thô sơ đường bộ' được hlểu thể nào là đúng?",
+            "options": [
+                "Gồm Xe đạp (kể cả xe đạp máy), xe xích lô, xe lăn dùng cho người khuyết tật, xe Súc vật kéo và các loại Xe tương tự.",
+                "Gồm Xe ô tô; máy kéo; Xe mô tò hai bánh; xe mô tô ba bánh; Xe gắn máy; Xe cơ giới dùng cho người khuyết tật và Xe máy chuyên dùng.",
+                "Gồm xe ô tô; máy kéo; rơ moóc hoặc sơ mi rơ moóc được kéo bởi Xe Ô tô, máy kéo; Xe mô tô hai bánh; xe mô tô ba bánh, Xe gắn máy (kể cả Xe máy điện) và các loại Xe tuơng tự."
+            ]
         }
     ]
 }
