@@ -40,10 +40,8 @@ angular.module('App', [])
         $scope.maxNumOptions = 0;
         $scope.numWrongAnswers = 0;
         $scope.numRightAnswers = 0;
-        $scope.wrongAnswersPercent = '10%';
-        $scope.rightAnswersPercent = '10%';
 
-        $scope.currentQuestion = 0;
+        $scope.currentQuestionIndex = 0;
         $scope.NUM_QUESTIONS = 30;
 
         $scope.timer = null;
@@ -69,19 +67,45 @@ angular.module('App', [])
             $(document).on('keyup', function(e) {
                 switch (e.keyCode) {
                     case 37:    // Left arrow
+                        if ($scope.currentQuestionIndex > 0) {
+                            $scope.currentQuestionIndex--;
+                            $scope.$apply();
+                        }
+                        break;
                         break;
                     case 38:    // Top arrow
-                        if ($scope.currentQuestion > 0) {
-                            $scope.currentQuestion--;
+                        if ($scope.currentQuestionIndex - 2 >= 0) {
+                            $scope.currentQuestionIndex = $scope.currentQuestionIndex - 2;
                             $scope.$apply();
                         }
                         break;
                     case 39:    // Right arrow
+                        if ($scope.currentQuestionIndex < $scope.NUM_QUESTIONS - 1) {
+                            $scope.currentQuestionIndex++;
+                            $scope.$apply();
+                        }
                         break;
                     case 40:    // Bottom arrow
-                        if ($scope.currentQuestion < $scope.NUM_QUESTIONS - 1) {
-                            $scope.currentQuestion++;
+                        if ($scope.currentQuestionIndex < $scope.NUM_QUESTIONS - 3) {
+                            $scope.currentQuestionIndex = $scope.currentQuestionIndex + 2;
                             $scope.$apply();
+                        }
+                        break;
+
+                    case 49:    // 1
+                    case 50:    // 2
+                    case 51:    // 3
+                    case 52:    // 4
+                    case 53:    // 5
+                    case 54:    // 6
+                    case 55:    // 7
+                    case 56:    // 8
+                    case 57:    // 9
+                        var optionIndex = e.keyCode - 49, question = $scope.questions[$scope.currentQuestionIndex];
+                        if (question['option_' + optionIndex] == null) {
+                            question['option_' + optionIndex] = true;
+                        } else {
+                            question['option_' + optionIndex] = !question['option_' + optionIndex];
                         }
                         break;
                     default:
@@ -91,7 +115,7 @@ angular.module('App', [])
         };
 
         $scope.gotoQuestion = function(index) {
-            $scope.currentQuestion = index;
+            $scope.currentQuestionIndex = index;
         };
 
         /**

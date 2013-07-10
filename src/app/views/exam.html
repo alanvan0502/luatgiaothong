@@ -11,92 +11,73 @@
 
     <div ng-show="!loading">
         <div class="row-fluid">
-            <div class="span3 app-option">
-                <!-- time: -->
-                <div class="app-clock app-progressbar">
-                    <div class="progress progress-danger progress-striped">
-                        <div class="bar" ng-style="{ width: timePercent }"></div>
-                        <span>{{ formatTime(); }}</span>
-                    </div>
+            <div class="span3">
+                <!-- tips: -->
+                <div class="alert alert-info">
+                    Sử dụng các phím mũi tên (&larr;, &rarr;, &uarr;, &darr;) để di chuyển câu hỏi. Nhấn các phím số (1 &rarr; 9) để chọn hoặc huỷ phương án trả lời.
                 </div>
-                <!-- :time -->
+                <!-- :tips -->
 
-                <!-- result: -->
-                <div>
-                    <div class="app-progressbar">
-                        <div class="progress progress-warning">
-                            <div class="bar" ng-style="{ width: wrongAnswersPercent }"></div>
-                            <span>{{ numWrongAnswers }}/{{ numQuestions }} {{ 'Wrong Answers' | i18n }}</span>
-                        </div>
-                    </div>
-
-                    <div class="app-progressbar">
-                        <div class="progress progress-success">
-                            <div class="bar" ng-style="{ width: rightAnswersPercent }"></div>
-                            <span>{{ numRightAnswers }}/{{ numQuestions }} {{ 'Right Answers' | i18n }}</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- :result -->
-
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th class="text-center">#</th>
-                            <th>
-                                <ul>
-                                    <li ng-repeat="i in maxNumOptions"><span class="badge badge-info">{{ $index + 1 }}</span></li>
-                                </ul>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr ng-repeat="question in questions" ng-class="{ 'success': currentQuestion == $index }">
-                            <td class="text-center"><a href="javascript: void(0);" ng-click="gotoQuestion($index)" class="label">{{ 'Question' | i18n }} {{ $index + 1 }}</a></td>
-                            <td>
-                                <ul>
-                                    <li ng-repeat="option in question.options">
-                                        <input type="checkbox" value="{{ $index + 1 }}" ng-click="chooseAnswer($event, $parent.$index, $index)" />
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="text-center">
-                    <button class="btn btn-primary btn-large" ng-click="finish()">{{ 'Finish' | i18n }}</button>
-                </div>
+                <!-- answers: -->
+                <ul class="app-answers">
+                    <li ng-repeat="question in questions" ng-class="{ 'app-active': currentQuestionIndex == $index }">
+                        <span>{{ $index + 1 }}</span>
+                        <ul class="inline">
+                            <li ng-repeat="option in question.options">
+                                <small>{{ $index + 1 }}</small>
+                                <input type="checkbox" value="{{ $index + 1 }}" ng-model="question['option_' + $index]" ng-click="gotoQuestion($parent.$index)" />
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- :answers -->
             </div>
 
-            <div class="span9 app-question">
-                <div class="popover left">
-                    <h3 class="popover-title">
-                        <span class="badge badge-success">{{ 'Question' | i18n }} {{currentQuestion + 1}}</span>
-                    </h3>
-                    <div class="popover-content">
-                        <h4>{{ questions[currentQuestion].title }}</h4>
-                        <p>{{ questions[currentQuestion].content }}</p>
+            <div class="span9">
+                <div class="row-fluid">
+                    <!-- clock: -->
+                    <div class="span3 app-clock">
+                        <span><i class="icon-time"></i> {{ formatTime(); }}</span>
+                    </div>
+                    <!-- :clock -->
 
-                        <table class="table table-stripped" id="choices">
-                            <thead>
+                    <div class="span9">
+
+                    </div>
+                </div>
+
+                <!-- question: -->
+                <div class="row-fluid app-question">
+                    <div class="popover">
+                        <h3 class="popover-title">
+                            <span class="badge badge-success">Câu hỏi {{currentQuestionIndex + 1}}</span>
+                        </h3>
+                        <div class="popover-content">
+                            <h4>{{ questions[currentQuestionIndex].title }}</h4>
+                            <p>{{ questions[currentQuestionIndex].content }}</p>
+
+                            <table class="table table-bordered">
+                                <thead>
                                 <tr>
-                                    <th>{{ 'Option Number' | i18n }}</th>
-                                    <th>{{ 'Option Content' | i18n }}</th>
-                                    <th>{{ 'Your Choice' | i18n }}</th>
-                                    <th>{{ 'Correct Answer' | i18n }}</th>
+                                    <th style="width: 50px;">Phương Án</th>
+                                    <th>Nội Dung</th>
+                                    <th style="width: 50px;">Bạn Chọn</th>
+                                    <th style="width: 50px;">Đáp Án</th>
                                 </tr>
-                            </thead>
-                            <tbody>
-                                <tr ng-repeat="option in questions[currentQuestion].options">
-                                    <td><span class="badge badge-info">{{ $index + 1 }}</span></td>
+                                </thead>
+                                <tbody>
+                                <tr ng-repeat="option in questions[currentQuestionIndex].options">
+                                    <td style="text-align: center"><span class="badge badge-info">{{ $index + 1 }}</span></td>
                                     <td>{{ option }}</td>
-                                    <td><i class="icon-ok" ng-show="questions[currentQuestion]['option_' + $index] == true"></i></td>
+                                    <td><i class="icon-check" ng-show="questions[currentQuestionIndex]['option_' + $index] == true"></i></td>
                                     <td></td>
                                 </tr>
                                 </tbody>
-                        </table>
+                            </table>
+                        </div>
                     </div>
                 </div>
+                <!-- :question -->
             </div>
         </div>
     </div>
