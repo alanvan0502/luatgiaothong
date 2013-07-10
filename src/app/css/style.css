@@ -3,7 +3,7 @@
 }
 
 .app-question {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .app-question .popover {
     display: block;
@@ -49,6 +49,11 @@
     height: 20px;
     z-index: 1000;
 }
+.app-answers li i {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
 .app-answers li span a, .app-answers li span a:visited {
     color: #fff;
     text-decoration: none;
@@ -71,6 +76,16 @@
 .app-answers .app-active {
     background: #f1f1f1;
 }
+.app-answers .app-right {
+    background-color: #47cb2a;
+}
+.app-answers .app-wrong {
+    background-color: #eb0301;
+    color: #fff;
+}
+.app-answers .app-right span, .app-answers .app-wrong span {
+    /*background-color: #f7f7f7;*/
+}
 
 .app-clock {
     border-right: 1px solid silver;
@@ -82,4 +97,22 @@
 .app-clock span {
     font-size: 50px;
     font-weight: normal;
+}
+
+.app-progressbar .progress {
+    height: 40px;
+    position: relative;
+}
+.app-progressbar .progress .bar {
+    position: absolute;
+    z-index: 1;
+}
+.app-progressbar .progress span {
+    font-size: 25px;
+    line-height: 45px;
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    z-index: 2;
 }

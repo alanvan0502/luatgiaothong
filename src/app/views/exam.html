@@ -20,12 +20,16 @@
 
                 <!-- answers: -->
                 <ul class="app-answers">
-                    <li ng-repeat="question in questions" ng-class="{ 'app-active': currentQuestionIndex == $index }">
-                        <span><a href="javascript: void(0);" ng-click="gotoQuestion($index)">{{ $index + 1 }}</a></span>
+                    <li ng-repeat="question in questions" ng-class="{ 'app-active': currentQuestionIndex == $index, 'app-wrong': done && !question.correct }">
+                        <span>
+                            <a href="javascript: void(0);" ng-click="gotoQuestion($index)">{{ $index + 1 }}</a>
+                        </span>
+                        <i class="icon-ok" ng-show="done && question.correct"></i>
+                        <i class="icon-remove" ng-show="done && !question.correct"></i>
                         <ul class="inline">
                             <li ng-repeat="option in question.options">
                                 <small>{{ $index + 1 }}</small>
-                                <input type="checkbox" value="{{ $index + 1 }}" ng-model="question['option_' + $index]" ng-click="gotoQuestion($parent.$index)" />
+                                <input type="checkbox" value="{{ $index + 1 }}" ng-disabled="done" ng-model="question['__options'][$index]" ng-click="chooseAnswer($parent.$index, $index, $event.target.checked)" />
                             </li>
                         </ul>
                     </li>
@@ -36,14 +40,35 @@
             <div class="span9">
                 <div class="row-fluid">
                     <!-- clock: -->
-                    <div class="span3 app-clock">
-                        <span><i class="icon-time"></i> {{ formatTime(); }}</span>
+                    <div class="span3">
+                        <div class="app-clock">
+                            <span><i class="icon-time"></i> {{ formatTime(); }}</span>
+                        </div>
                     </div>
                     <!-- :clock -->
 
-                    <div class="span9">
+                    <!-- result: -->
+                    <div class="span6">
+                        <div class="app-progressbar" ng-hide="done">
+                            <div class="progress progress-success progress-striped active">
+                                <div class="bar" style="width: {{ numAnswers * 100 / numQuestions  }}%;"></div>
+                                <span>{{ numAnswers }} / {{ numQuestions }} câu</span>
+                            </div>
+                        </div>
 
+                        <div class="btn-group" ng-show="done" style="width: 100%;">
+                            <button class="btn btn-large btn-success" style="width: 50%;"><i class="icon-thumbs-up"></i> {{ numRightAnswers }} câu đúng</button>
+                            <button class="btn btn-large btn-danger" style="width: 50%;"><i class="icon-thumbs-down"></i> {{ numWrongAnswers }} câu sai</button>
+                        </div>
                     </div>
+                    <!-- :result -->
+
+                    <!-- finish-button: -->
+                    <div class="span3">
+                        <button class="btn btn-large btn-primary" style="width: 100%;" ng-click="finish()" ng-hide="done">KẾT THÚC</button>
+                        <button class="btn btn-large btn-primary" style="width: 100%;" ng-click="restart()" ng-show="done">LÀM LẠI</button>
+                    </div>
+                    <!-- :finish-button -->
                 </div>
 
                 <!-- question: -->
@@ -62,15 +87,17 @@
                                         <th style="width: 50px;">Phương Án</th>
                                         <th>Nội Dung</th>
                                         <th style="width: 50px;">Bạn Chọn</th>
-                                        <th style="width: 50px;">Đáp Án</th>
+                                        <th style="width: 50px;" ng-show="done">Đáp Án</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr ng-repeat="option in questions[currentQuestionIndex].options">
                                         <td style="text-align: center"><span class="badge badge-info">{{ $index + 1 }}</span></td>
                                         <td>{{ option }}</td>
-                                        <td><i class="icon-check" ng-show="questions[currentQuestionIndex]['option_' + $index] == true"></i></td>
-                                        <td></td>
+                                        <td><i class="icon-check" ng-show="questions[currentQuestionIndex]['answers'].indexOf($index + 1) != -1"></i></td>
+                                        <td ng-show="done">
+                                            <i class="icon-ok" ng-show="questions[currentQuestionIndex]['correct_answers'].indexOf($index + 1) != -1"></i>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
