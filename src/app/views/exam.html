@@ -74,9 +74,9 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th style="width: 50px;">Phương Án</th>
+                                        <th style="width: 100px;">Phương Án</th>
                                         <th>Nội Dung</th>
-                                        <th style="width: 50px;">Bạn Chọn</th>
+                                        <th style="width: 75px;">Bạn Chọn</th>
                                         <th style="width: 50px;" ng-show="done">Đáp Án</th>
                                     </tr>
                                 </thead>
@@ -96,6 +96,22 @@
                 </div>
                 <!-- :question -->
             </div>
+        </div>
+
+        <div class="row-fluid" ng-class="{ 'hide': closedTimeModal, 'show': !closedTimeModal }">
+            <!-- time-over-dialog: -->
+            <div class="modal fade in">
+                <div class="modal-header">
+                    <h3>Hết Giờ</h3>
+                </div>
+                <div class="modal-body">Đã hết thời gian!</div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" ng-click="timeOver();">Đóng</button>
+                </div>
+            </div>
+
+            <div class="modal-backdrop fade in"></div>
+            <!-- :time-over-dialog -->
         </div>
     </div>
 </div>

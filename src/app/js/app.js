@@ -89,7 +89,8 @@ angular.module('App', [ 'LocalStorageModule' ])
         };
     })
     .controller('ExamController', function($rootScope, $scope, $http, $timeout, localStorageService) {
-        $scope.NUM_QUESTIONS = 30;
+        $scope.MAX_TIME        = 20 * 60;   // 20 minutes
+        $scope.NUM_QUESTIONS   = 30;
         $scope.QUESTION_RANGES = [
 //            { range: '1..255', total: 9 },
 //            { range: '256..450', total: 9 }
@@ -97,8 +98,6 @@ angular.module('App', [ 'LocalStorageModule' ])
             { range: '5..9', total: 3 },
             { range: '10..15', total: 3 }
         ];
-
-        $scope.MAX_TIME = 20 * 60;   // 20 minutes
 
         // --- PUBLIC METHODS ---
 
@@ -122,6 +121,7 @@ angular.module('App', [ 'LocalStorageModule' ])
             $scope.timer   = null;
             $scope.minutes = 0;
             $scope.seconds = 0;
+            $scope.closedTimeModal = true;
         };
 
         /**
@@ -237,6 +237,13 @@ angular.module('App', [ 'LocalStorageModule' ])
             $scope.init();
         };
 
+        /**
+         * Close the time over modal
+         */
+        $scope.timeOver = function() {
+            $scope.closedTimeModal = true;
+        };
+
         // --- PRIVATE METHODS ---
 
         /**
@@ -301,6 +308,12 @@ angular.module('App', [ 'LocalStorageModule' ])
                     $scope.minutes++;
                     $scope.seconds = 0;
                 }
+                if ($scope.minutes * 60 + $scope.seconds > $scope.MAX_TIME) {
+                    $scope.closedTimeModal = false;
+                    $scope.finish();
+                    return;
+                }
+
                 $scope.createTimer();
             }, 1000);
         };
