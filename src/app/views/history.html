@@ -1,0 +1,35 @@
+<div class="row-fluid" ng-controller="HistoryController" ng-init="init()">
+    <div class="page-header">
+        <h1>Kết Quả</h1>
+    </div>
+
+    <p ng-show="points.length == 0">Không tìm thấy kết quả của lần thi nào. Có thể trình duyệt của bạn không hỗ trợ hoặc các kết quả thi gần nhất đã bị xoá.</p>
+
+    <div ng-show="points.length > 0">
+        <p>Kết quả {{ MAX_RECENT_POINTS }} lần thi thử gần nhất:</p>
+        <table class="table table-stripped">
+            <thead>
+                <tr>
+                    <th>Thời Điểm</th>
+                    <th>Số Câu Đúng</th>
+                    <th>Số Câu Sai</th>
+                    <th>Tổng Thời Gian</th>
+                    <th>Đạt</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="point in points" ng-class="{ 'success': point.right >= MIN_TO_PASS }">
+                    <td>{{ formatDate(point.date) }}</td>
+                    <td>{{ point.right }}</td>
+                    <td>{{ point.wrong }}</td>
+                    <td>{{ point.total_time }}</td>
+                    <td><i class="icon-ok" ng-show="point.right >= MIN_TO_PASS"></i></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="text-center">
+            <button class="btn btn-primary btn-large" ng-click="reset()">XOÁ</button>
+        </div>
+    </div>
+</div>

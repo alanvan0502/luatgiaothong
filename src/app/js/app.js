@@ -1,4 +1,9 @@
-angular.module('App', [])
+/**
+ * @author      Nguyen Huu Phuoc <phuoc@huuphuoc.me>
+ * @copyright   (c) 2013 Nguyen Huu Phuoc
+ */
+
+angular.module('App', [ 'LocalStorageModule' ])
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('', {
             templateUrl: 'app/views/index.html',
@@ -7,6 +12,10 @@ angular.module('App', [])
         $routeProvider.when('/exam', {
             templateUrl: 'app/views/exam.html',
             controller: 'ExamController'
+        });
+        $routeProvider.when('/history', {
+            templateUrl: 'app/views/history.html',
+            controller: 'HistoryController'
         });
     }])
     .config(function($httpProvider) {
@@ -45,7 +54,37 @@ angular.module('App', [])
         $scope.init = function() {
         };
     })
-    .controller('ExamController', function($rootScope, $scope, $http, $timeout) {
+    .controller('HistoryController', function($rootScope, $scope, localStorageService) {
+        $scope.MAX_RECENT_POINTS = 10;
+        // The number of right questions required to pass
+        $scope.MIN_TO_PASS       = 26;
+        $scope.points = [];
+
+        /**
+         * Initialize the controller
+         */
+        $scope.init = function() {
+            var points    = localStorageService.get('points');
+            points        = (points == null) ? [] : angular.fromJson(points);
+            $scope.points = points.length > $scope.MAX_RECENT_POINTS ? points.slice(points.length - $scope.MAX_RECENT_POINTS) : points;
+            $scope.points = $scope.points.reverse();
+        };
+
+        /**
+         * Reset button click handler
+         */
+        $scope.reset = function() {
+            localStorageService.remove('points');
+            $scope.points = [];
+        };
+
+        $scope.formatDate = function(time) {
+            var d = new Date();
+            d.setTime(time);
+            return [ d.getDate(), d.getMonth(), d.getFullYear() ].join('/') + ' ' + [ d.getHours(), d.getMinutes(), d.getSeconds() ].join(':');
+        };
+    })
+    .controller('ExamController', function($rootScope, $scope, $http, $timeout, localStorageService) {
         $scope.NUM_QUESTIONS = 30;
         $scope.QUESTION_RANGES = [
 //            { range: '1..255', total: 9 },
@@ -86,9 +125,6 @@ angular.module('App', [])
          */
         $scope.init = function() {
             $scope.reset();
-
-            //var height = $(document).height() - 100;
-            //$('#loading').css('margin-top', parseInt(height / 2));
 
             $http.get('data/questions.json').success(function(response) {
                 $scope.allQuestions = response.questions;
@@ -172,6 +208,17 @@ angular.module('App', [])
                 }
 
                 $scope.numWrongAnswers = $scope.numQuestions - $scope.numRightAnswers;
+
+                // Store the result
+                var points = localStorageService.get('points');
+                points = (points == null) ? [] : angular.fromJson(points);
+                points.push({
+                    'date': new Date().getTime(),
+                    'wrong': $scope.numWrongAnswers,
+                    'right': $scope.numRightAnswers,
+                    'total_time': $scope.formatTime()
+                });
+                localStorageService.add('points', angular.toJson(points));
 
                 // Done
                 $scope.done = true;

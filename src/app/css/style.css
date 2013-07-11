@@ -16,6 +16,8 @@
     float: left;
     list-style: none;
     margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
     width: 100%;
 }
 .app-answers li {
