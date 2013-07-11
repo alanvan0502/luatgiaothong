@@ -9,6 +9,23 @@ angular.module('App', [])
             controller: 'ExamController'
         });
     }])
+    .config(function($httpProvider) {
+        var numLoadings = 0;
+        var loadingScreen = $('<div style="position: fixed; top: 0; left: 0; z-index: 1000; width: 100%; height: 100%;"><div class="container" style="position: absolute; top: 50%; left: 0; width: 100%;"><div class="container"><div class="span6 offset3"><div class="progress progress-striped active"><div class="bar" style="width: 100%;"></div></div></div></div></div></div>').appendTo($('body')).hide();
+        $httpProvider.responseInterceptors.push(function() {
+            return function(promise) {
+                numLoadings++;
+                loadingScreen.show();
+                var hide = function(r) {
+                    if (!(--numLoadings)) {
+                        loadingScreen.hide();
+                    }
+                    return r;
+                };
+                return promise.then(hide, hide);
+            };
+        });
+    })
     .filter('i18n', function(){
         var language = 'vi_VN';
         return function(text){
@@ -70,8 +87,8 @@ angular.module('App', [])
         $scope.init = function() {
             $scope.reset();
 
-            var height = $(document).height() - 100;
-            $('#loading').css('margin-top', parseInt(height / 2));
+            //var height = $(document).height() - 100;
+            //$('#loading').css('margin-top', parseInt(height / 2));
 
             $http.get('data/questions.json').success(function(response) {
                 $scope.allQuestions = response.questions;
