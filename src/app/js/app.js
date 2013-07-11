@@ -17,6 +17,10 @@ angular.module('App', [ 'LocalStorageModule' ])
             templateUrl: 'app/views/history.html',
             controller: 'HistoryController'
         });
+        $routeProvider.when('/contact', {
+            templateUrl: 'app/views/contact.html',
+            controller: 'HistoryController'
+        });
     }])
     .config(function($httpProvider) {
         var numLoadings = 0;
