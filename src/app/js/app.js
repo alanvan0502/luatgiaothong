@@ -92,11 +92,8 @@ angular.module('App', [ 'LocalStorageModule' ])
         $scope.MAX_TIME        = 20 * 60;   // 20 minutes
         $scope.NUM_QUESTIONS   = 30;
         $scope.QUESTION_RANGES = [
-//            { range: '1..255', total: 9 },
-//            { range: '256..450', total: 9 }
-            { range: '1..4', total: 2 },
-            { range: '5..9', total: 3 },
-            { range: '10..15', total: 3 }
+            { range: '1..255', total: 9 },
+            { range: '256..450', total: 9 }
         ];
 
         // --- PUBLIC METHODS ---
