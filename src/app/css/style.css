@@ -10,6 +10,24 @@
     max-width: none;
     position: relative;
 }
+.app-question ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.app-question li {
+    float: left;
+}
+.app-question li img {
+    display: block;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.app-question li span {
+    font-size: 30px;
+}
 
 .app-answers {
     border-left: 1px solid #f1f1f1;

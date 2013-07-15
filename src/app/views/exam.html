@@ -71,6 +71,13 @@
                             <h4>{{ questions[currentQuestionIndex].title }}</h4>
                             <p>{{ questions[currentQuestionIndex].content }}</p>
 
+                            <ul ng-show="questions[currentQuestionIndex].images.length > 1">
+                                <li ng-repeat="image in questions[currentQuestionIndex].images">
+                                    <img src="{{ image }}" />
+                                    <span ng-show="questions[currentQuestionIndex].images.length > 1">{{ $index + 1 }}</span>
+                                </li>
+                            </ul>
+
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>

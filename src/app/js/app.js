@@ -349,6 +349,7 @@ angular.module('App', [ 'LocalStorageModule' ])
                     'title':   questions[i].title,
                     'content': questions[i].content,
                     'options': questions[i].options,
+                    'images': questions[i].images && questions[i].images.length > 0 ? questions[i].images : [],
                     '__options': {},
                     'answers': [],
                     'correct': false
