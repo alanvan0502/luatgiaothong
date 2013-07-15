@@ -3060,6 +3060,7 @@
             "number": 324,
             "title": "Khi gặp biển này, xe lam và mô tô ba bánh có được phép rẽ trái hay rẽ phải hay không?",
             "images": [
+                "img/324.png"
             ],
             "options": [
                 "Ðược phép.",
@@ -3070,6 +3071,7 @@
             "number": 325,
             "title": "Biển này có hiệu lực đối với xe mô tô hai, ba bánh không?",
             "images": [
+                "img/325.png"
             ],
             "options": [
                 "Có",
@@ -3080,6 +3082,7 @@
             "number": 326,
             "title": "Biển này có ý nghĩa gì?",
             "images": [
+                "img/326.png"
             ],
             "options": [
                 "Cấm xe cơ giới (trừ xe ưu tiên theo luật định) đi thẳng.",
@@ -3091,6 +3094,7 @@
             "number": 327,
             "title": "Biển phụ đặt dưới biển cấm bóp còi có ý nghĩa gì?",
             "images": [
+                "img/327.png"
             ],
             "options": [
                 "Báo khoảng cách đến nơi cấm bóp còi.",
@@ -3102,6 +3106,7 @@
             "number": 328,
             "title": "Chiều dài đoạn đường 500m từ nơi đặt biển này người lái xe có được phép bấm còi không?",
             "images": [
+                "img/328.png"
             ],
             "options": [
                 "Ðược phép.",
@@ -3112,6 +3117,7 @@
             "number": 329,
             "title": "Biển này có ý nghĩa gì?",
             "images": [
+                "img/329.png"
             ],
             "options": [
                 "Cấm dừng xe về hướng bên trái.",
@@ -3123,6 +3129,7 @@
             "number": 330,
             "title": "Theo hướng bén phải có được phép đỗ xe, dừng xe không?",
             "images": [
+                "img/330.png"
             ],
             "options": [
                 "Không được phép.",
@@ -3133,6 +3140,7 @@
             "number": 331,
             "title": "Gặp biển này, xe ô tô sơ mi rơ moóc có tổng chiều dài lớn hơn trị số ghi trên biển có được phép đi vào không?",
             "images": [
+                "img/331.png"
             ],
             "options": [
                 "Không được phép.",
@@ -3143,6 +3151,7 @@
             "number": 332,
             "title": "Xe ô tô chở hàng vượt quá phía trước và sau thùng xe, mỗi phía quá 10% chiều dài toàn bộ thân xe, tổng chiều dài xe (cả hàng) từ trước đến sau nhỏ hơn trị số ghi trên biển thì có được phép đi vào không?",
             "images": [
+                "img/332.png"
             ],
             "options": [
                 "Không được phép.",
