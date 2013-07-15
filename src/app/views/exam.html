@@ -8,14 +8,18 @@
                 </div>
                 <!-- :tips -->
 
+                <p><label class="checkbox"><input type="checkbox" ng-model="showQuestionNumber" /> Hiển thị thứ tự câu hỏi trong bộ đề</label></p>
+
                 <!-- answers: -->
                 <ul class="app-answers">
                     <li ng-repeat="question in questions" ng-class="{ 'app-active': currentQuestionIndex == $index, 'app-wrong': done && !question.correct }">
                         <span>
-                            <a href="javascript: void(0);" ng-click="gotoQuestion($index)">{{ $index + 1 }}</a>
+                            <a href="javascript: void(0);" ng-click="gotoQuestion($index)">{{ $index + 1 }} <small ng-show="showQuestionNumber">({{ question.number }})</small></a>
                         </span>
+                        <!--
                         <i class="icon-ok" ng-show="done && question.correct"></i>
                         <i class="icon-remove" ng-show="done && !question.correct"></i>
+                        -->
                         <ul class="inline">
                             <li ng-repeat="option in question.options">
                                 <small>{{ $index + 1 }}</small>
@@ -65,7 +69,7 @@
                 <div class="row-fluid app-question">
                     <div class="popover">
                         <h3 class="popover-title">
-                            <span class="badge badge-success">Câu hỏi {{currentQuestionIndex + 1}}</span>
+                            <span class="badge badge-success">Câu hỏi {{currentQuestionIndex + 1}} <span ng-show="showQuestionNumber">({{ questions[currentQuestionIndex].number }})</span></span>
                         </h3>
                         <div class="popover-content">
                             <h4>{{ questions[currentQuestionIndex].title }}</h4>

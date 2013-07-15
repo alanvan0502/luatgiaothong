@@ -123,6 +123,8 @@ angular.module('App', [ 'LocalStorageModule' ])
             $scope.minutes = 0;
             $scope.seconds = 0;
             $scope.closedTimeModal = true;
+
+            $scope.showQuestionNumber = false;
         };
 
         /**
@@ -346,10 +348,11 @@ angular.module('App', [ 'LocalStorageModule' ])
             for (i = 0; i < $scope.numQuestions; i++) {
                 // The data structure of $scope.questions
                 $scope.questions[i] = {
+                    'number':  questions[i].number,
                     'title':   questions[i].title,
                     'content': questions[i].content,
                     'options': questions[i].options,
-                    'images': questions[i].images && questions[i].images.length > 0 ? questions[i].images : [],
+                    'images':  questions[i].images && questions[i].images.length > 0 ? questions[i].images : [],
                     '__options': {},
                     'answers': [],
                     'correct': false
