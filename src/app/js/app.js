@@ -203,10 +203,10 @@ angular.module('App', [ 'LocalStorageModule' ])
 
                 var i, j;
                 for (i = 0; i < $scope.numQuestions; i++) {
-                    j = i + 1;
-                    $scope.questions[i]['correct_answers'] = response.answers['' + j];
+                    j = '' + $scope.questions[i].number;
+                    $scope.questions[i]['correct_answers'] = response.answers[j];
 
-                    if ($scope.questions[i]['answers'].sort().join('_') == response.answers['' + j].sort().join('_')) {
+                    if ($scope.questions[i]['answers'].sort().join('_') == $scope.questions[i]['correct_answers'].sort().join('_')) {
                         $scope.questions[i]['correct'] = true;
                         $scope.numRightAnswers++;
                     } else {
