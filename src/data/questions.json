@@ -1969,6 +1969,9 @@
         {
             "number": 221,
             "title": "Khi động cơ ô tô đã khởi động, bảng đồng hồ xuất hiện ký hiệu như hình vẽ dưới đây, báo hiệu tình trạng như thế nào của xe?",
+            "images": [
+                "img/221.png"
+            ],
             "options": [
                 "Phanh tay đang hãm.",
                 "Thiếu dầu phanh.",
@@ -1979,6 +1982,9 @@
         {
             "number": 222,
             "title": "Khi động cơ ô tô đã khởi động, bảng đồng hồ xuất hiện ký hiệu như hình vẽ dưới đây, báo hiệu tình trạng như thế nào của xe?",
+            "images": [
+                "img/222.png"
+            ],
             "options": [
                 "Cửa xe đóng chưa chặt.",
                 "Có cửa xe Chưa đóng.",
@@ -1989,6 +1995,9 @@
         {
             "number": 223,
             "title": "Khi động cơ ô tô đã khởi động, bảng đồng hồ xuất hiện ký hiệu như hình vẽ dưới đây, báo hiệu tình trạng như thế nào của xe?",
+            "images": [
+                "img/223.png"
+            ],
             "options": [
                 "Thiếu dầu phanh, phanh tay đang hãm.",
                 "Hệ thống túi khí an toàn gặp sự cố.",
@@ -1999,6 +2008,9 @@
         {
             "number": 224,
             "title": "Khi động cơ ô tô đã khởi động, bảng đồng hồ xuất hiện ký hiệu như hình vẽ dưới đây, báo hiệu tình trạng như thế nào của xe?",
+            "images": [
+                "img/224.png"
+            ],
             "options": [
                 "Báo hiệu thiếu dầu phanh.",
                 "Áp Suất lốp không đủ.",
@@ -2009,6 +2021,9 @@
         {
             "number": 225,
             "title": "Khi đã đỗ xe ô tô sát lề đường bên phải, người lái xe phải thực hiện các thao tác nào dưới đây khi mở cửa xuống xe để đảm bảo an toàn?",
+            "images": [
+                "img/225.png"
+            ],
             "options": [
                 "Quan sát tình hình giao thông phía sau, mở hé cánh cửa, nếu đàm bảo an toàn thì mở cửa ở mức cần thiết để xuống xe Ô tô.",
                 "Mở hé cánh cửa và quan sát tình hình giao thông phía trước, nếu đảm bảo an toàn thì mở cửa ở mức cần thiết để xuống xe ô tô.",
