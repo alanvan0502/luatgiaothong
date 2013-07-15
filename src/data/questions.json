@@ -133,7 +133,7 @@
             "options": [
                 "Gồm xe đạp (kể cả xe đạp máy), xe xích lô, xe lăn dùng cho người khuyết tật, xe súc vật kéo và các loại xe tương tự.",
                 "Gồm xe ô tô; máy kéo; xe mô tò hai bánh; xe mô tô ba bánh; xe gắn máy; xe cơ giới dùng cho người khuyết tật và xe máy chuyên dùng.",
-                "Gồm xe ô tô; máy kéo; rơ moóc hoặc sơ mi rơ moóc được kéo bởi xe Ô tô, máy kéo; xe mô tô hai bánh; xe mô tô ba bánh, xe gắn máy (kể cả xe máy điện) và các loại xe tuơng tự."
+                "Gồm xe ô tô; máy kéo; rơ moóc hoặc sơ mi rơ moóc được kéo bởi xe ô tô, máy kéo; xe mô tô hai bánh; xe mô tô ba bánh, xe gắn máy (kể cả xe máy điện) và các loại xe tuơng tự."
             ]
         },
         {
@@ -665,7 +665,7 @@
             "title": "Khi dừng xe, đỗ xe tại nơi được phép trên đường phố, người điều khiển phương tiện phải tuân theo những quy định nào dưới đây?",
             "options": [
                 "Phải cho xe dừng, đỗ sát theo lề đường, hè phố bên trái theo chiều đi của mình; bánh xe gần nhất không được cách xa lề đường, hè phố quá 0,30 mét và không gây cản trở, nguy hiểm cho giao thông. Trường hợp đường phố hẹp, phải dừng xe, đỗ xe ở vị trí cách xe ô tô đang đỗ bên kia đường tối thiểu 15 mét.",
-                "Phải cho xe dừng, đỗ sát theo lề đường, hè phố phía bên phải theo chiều đi của mình; bánh xe gần nhất không được cách xa lề đường, hè phố quá 0,25 mét và không gây cản trở, nguy hiểm cho giao thông. Trường hợp đường phố hẹp, phải dừng xe, đỗ xe trí ca'ch xe Ô tô đang đỗ bén kia đường tối thiểu 20 mét.",
+                "Phải cho xe dừng, đỗ sát theo lề đường, hè phố phía bên phải theo chiều đi của mình; bánh xe gần nhất không được cách xa lề đường, hè phố quá 0,25 mét và không gây cản trở, nguy hiểm cho giao thông. Trường hợp đường phố hẹp, phải dừng xe, đỗ xe trí ca'ch xe ô tô đang đỗ bén kia đường tối thiểu 20 mét.",
                 "Tất cả các ý nêu trên."
             ]
         },
@@ -754,9 +754,9 @@
             "number": 86,
             "title": "Tại nơi đường bộ giao nhau cùng mức với đường sắt chỉ có đèn tín hiệu hoặc chuông báo hiệu, khi đèn tín hiệu màu đỏ đã bật sáng hoặc có tiếng chuông báo hiệu, người tham gia giao thông phải dừng lại ngay và giữ khoảng cách tối thiểu bao nhiêu mét tính từ ray gần nhất?",
             "options": [
-                "5,00 m",
-                "3,00 m",
-                "4,00 m",
+                "5,00 m.",
+                "3,00 m.",
+                "4,00 m.",
                 "7,00 m."
             ]
         },
@@ -790,7 +790,7 @@
             "number": 90,
             "title": "Những trường hợp nào ghi ở dưới đây không được đi vào đường cao tốc trừ người, phương tiện, thiết bị phục vụ cho việc quản lý, bảo trì đường cao tốc?",
             "options": [
-                "Người đi bộ, xe thô sơ, xe gắn máy và xe Ô tô.",
+                "Người đi bộ, xe thô sơ, xe gắn máy và xe ô tô.",
                 "Xe mô tô và xe máy chuyên dùng có tốc độ thiết kế lớn hơn 70km/h.",
                 "Người đi bộ, xe thô sơ, xe gắn máy, xe mô tô và xe máy chuyên dùng có tốc độ thiết kế nhỏ hơn 70km/h."
             ]
@@ -973,9 +973,9 @@
             "number": 112,
             "title": "Người đủ bao nhiêu tuổi trở lên thì được điều khiển xe mô tô hai bánh, xe mô tô ba bánh có dung tích xi lanh từ 50cm3 trở lên và các loại xe có kết cấu tương tự xe ô tô tải, máy kéo có trọng tải dưới 3,5 tấn; xe ôtô chở người đến 9 chỗ ngồi?",
             "options": [
-                "16tuổi.",
-                "18tuổi.",
-                "17tuổi."
+                "16 tuổi.",
+                "18 tuổi.",
+                "17 tuổi."
             ]
         },
         {
@@ -991,7 +991,7 @@
             "number": 114,
             "title": "Người lái xe ô tô chở người trên 30 chỗ ngồi (hạng E), lái xe hạng D kéo rơ móc (FD) phải đu bao nhiêu tuổi trở lên?",
             "options":  [
-                "23 tuổi",
+                "23 tuổi.",
                 "24 tuổi.",
                 "27 tuổi."
             ]
@@ -1009,8 +1009,8 @@
             "number": 116,
             "title": "Người lái xe chở người từ 10 đến 30 chỗ ngồi (hạng D), lái xe hạng C kéo rơ moóc (FC) phải đủ bao nhiêu tuổi trở lên?",
             "options": [
-                "23 tuổi",
-                "24tuổi.",
+                "23 tuổi.",
+                "24 tuổi.",
                 "22 tuổi."
             ]
         },
@@ -1037,8 +1037,8 @@
             "number": 119,
             "title": "Người có giấy phép lái xe hạng FC được điều khiển các loại xe nào?",
             "options": [
-                "Các loại xe được quy định tại giấy phép lái xe hạng C có kéo rơ moóc, ô tô đầu kéo sơ mi rơ moóc, Ô tô chở khách nối toa và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2 và FB2.",
-                "Các loại xe được quy định tại giấy phép lái xe hạng C có kéo rơ moóc, Ô tô đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2, C và FB2.",
+                "Các loại xe được quy định tại giấy phép lái xe hạng C có kéo rơ moóc, ô tô đầu kéo sơ mi rơ moóc, ô tô chở khách nối toa và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2 và FB2.",
+                "Các loại xe được quy định tại giấy phép lái xe hạng C có kéo rơ moóc, ô tô đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2, C và FB2.",
                 "MÔ tô hai bánh, các loại xe được quy định tại giấy phép lái xe hạng C có kẻo rơ moóc, ô tô đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2, C và FB2.",
                 "Tất cả các loại xe nêu trên."
             ]
@@ -1047,7 +1047,7 @@
             "number": 120,
             "title": "Người có  giấy phép lái xe hạng FE được đlểu khiển các loại xe nào?",
             "options": [
-                "Các loại xe được quy định tại giấy phép lái xe hạng E có kéo rơ moóc và được điều khiển các loại xe: Ô tô chở khách nối toa và các loại xe quy định cho giấy phép lái xe hạng B1, B2, C, D, FB2, FD.",
+                "Các loại xe được quy định tại giấy phép lái xe hạng E có kéo rơ moóc và được điều khiển các loại xe: ô tô chở khách nối toa và các loại xe quy định cho giấy phép lái xe hạng B1, B2, C, D, FB2, FD.",
                 "Các loại xe được quy định tại giấy phép lái xe hạng E có kéo rơ moóc, đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe: ô tô chở khách nối toa và các loại xe quy định cho giấy phép lái xe hạng B1, B2, C, D, FB2, FD.",
                 "Tất cả các loại xe nêu trên."
             ]
@@ -1198,7 +1198,7 @@
                 "Ô tô chở người đến 30 chỗ ngồi (trừ ô tô buýt), ô tô tải có trọng tải dưới 3500 kG.",
                 "Ô tô chở người trên 30 chỗ ngồi (trừ ô tô buýt), ô tô tải có trọng tải từ 3500 kG trở lẻn.",
                 "Ô tô kéo rơ moóc, ô tô kéo xe khác, xe gắn máy.",
-                "Ô tô buýt, Ô tô sơ mi rơ moóc, ô tô chuyên dùng, xe mô tô."
+                "Ô tô buýt, ô tô sơ mi rơ moóc, ô tô chuyên dùng, xe mô tô."
             ]
         },
         {
@@ -1208,7 +1208,7 @@
                 "Ô tô chở người đến 30 chỗ ngồi (trừ ô tô buýt), ô tô tải có trọng tải dưới 3500 kG.",
                 "Ô tô chở người trên 30 chỗ ngồi (trừ ô tô buýt), ô tô tải có trọng tải từ 3500 kG trở lẻn.",
                 "Ô tô kéo rơ moóc, ô tô kéo xe khác, xe gắn máy.",
-                "Ô tô buýt, Ô tô sơ mi rơ moóc, ô tô chuyên dùng"
+                "Ô tô buýt, ô tô sơ mi rơ moóc, ô tô chuyên dùng"
             ]
         },
         {
@@ -1228,7 +1228,7 @@
                 "Ô tô chở người đến 30 chỗ ngồi (trừ ô tô buýt), ô tô tải có trọng tải dưới 3500 kG.",
                 "Ô tô buýt, ô tô sơ mi rơ moóc, ô tô chuyên dùng, xe mô tô.",
                 "Ô tô chở người trên 30 chỗ ngồi (trừ ô tô buýt), ô tô tải có trọng tải từ 3500 kG trở lên.",
-                "Ô tô kẻo rơ moóc, Ô tô kẻo xe khác, xe gắn máy."
+                "Ô tô kẻo rơ moóc, ô tô kẻo xe khác, xe gắn máy."
             ]
         },
         {
@@ -1237,7 +1237,7 @@
             "options": [
                 "30m.",
                 "40m.",
-                "50m",
+                "50m.",
                 "60m."
             ]
         },
@@ -1267,7 +1267,7 @@
             "options": [
                 "60m.",
                 "70m.",
-                "80m",
+                "80m.",
                 "90m."
             ]
         },
@@ -2001,7 +2001,7 @@
                 "Thiếu dầu phanh, phanh tay đang hãm.",
                 "Hệ thống túi khí an toàn gặp sự cố.",
                 "Lái xe và người ngồi ghế trước chưa cài dây an toàn.",
-                "Cửa đóng chưa chặt, có cửa chưa đóng. "
+                "Cửa đóng chưa chặt, có cửa chưa đóng."
             ]
         },
         {
@@ -2024,7 +2024,7 @@
                 "img/225.png"
             ],
             "options": [
-                "Quan sát tình hình giao thông phía sau, mở hé cánh cửa, nếu đàm bảo an toàn thì mở cửa ở mức cần thiết để xuống xe Ô tô.",
+                "Quan sát tình hình giao thông phía sau, mở hé cánh cửa, nếu đàm bảo an toàn thì mở cửa ở mức cần thiết để xuống xe ô tô.",
                 "Mở hé cánh cửa và quan sát tình hình giao thông phía trước, nếu đảm bảo an toàn thì mở cửa ở mức cần thiết để xuống xe ô tô.",
                 "Mở cánh cửa hết hành trình và nhanh chóng ra khỏi xe ô tô."
             ]
@@ -2053,7 +2053,7 @@
             "options": [
                 "Vị trí N hoặc số 0.",
                 "Vị trí D hoặc số 1.",
-                "Cà hai ý nêu trên."
+                "Cả hai ý nêu trên."
             ]
         },
         {
@@ -2116,12 +2116,12 @@
             "title": "Xe ô tô tham gia giao thông đường bộ phải bảo đảm các quy định về chất lượng, an toàn kỹ thuật và bảo vệ môi trường nào ghi dưới đây?",
             "options": [
                 "Kính chắn giỏ, kính cửa phải là loại kính an toàn, bảo đảm tầm nhìn cho người điều khiển; có đủ hệ thống hãm và hệ thống chuyển hướng có hiệu lực, tay lái của xe ô tô ở bên trái của xe, có còi với âm lượng đúng quy chuẩn kỹ thuật.",
-                "Có đủ đèn chiếu sáng gần và xa, đèn soi biển số, đèn báo hiệu, đèn tín hiệu; có đủ bộ phận giảm thanh, giảm khói, Các kết cấu phải đủ độ bền và bảo đảm tính năng Vận hành ổn định."
+                "Có đủ đèn chiếu sáng gần và xa, đèn soi biển số, đèn báo hiệu, đèn tín hiệu; có đủ bộ phận giảm thanh, giảm khói, các kết cấu phải đủ độ bền và bảo đảm tính năng Vận hành ổn định."
             ]
         },
         {
             "number": 236,
-            "title": "Xe ôtô tham gia giao thông trên đường bộ phải bắt buộc có đủ bộ phận giảm thanh, giảm khói không?",
+            "title": "Xe ô tô tham gia giao thông trên đường bộ phải bắt buộc có đủ bộ phận giảm thanh, giảm khói không?",
             "options": [
                 "Không bắt buộc.",
                 "Bắt buộc."
@@ -2170,7 +2170,7 @@
             "number": 241,
             "title": "Mục đích của bảo dưỡng thường xuyên đối với xe ô tô có tác dụng gì?",
             "options": [
-                "Bảo dưỡng ô tô thường xuyên làm cho Ô tô luôn luôn có tính nãng kỹ thuật tốt, giảm cường độ hao mòn của các chi tiết.",
+                "Bảo dưỡng ô tô thường xuyên làm cho ô tô luôn luôn có tính nãng kỹ thuật tốt, giảm cường độ hao mòn của các chi tiết.",
                 "Ngăn ngừa và phát hiện kịp thời các hư hỏng và sai lệch kỹthuật để khắc phục, giữ gìn được hình thức bên ngoài."
             ]
         },
@@ -2256,14 +2256,14 @@
             "number": 252,
             "title": "Hãy nêu công dụng ly hợp của ô tô?",
             "options": [
-                "Dùng để truyền mô men xoắn giữa các trục không cùng nằm trên một đường thằng và góc lệch trục luôn thay đổi trong quá trình Ô tô chuyển động.",
+                "Dùng để truyền mô men xoắn giữa các trục không cùng nằm trên một đường thằng và góc lệch trục luôn thay đổi trong quá trình ô tô chuyển động.",
                 "Dùng để truyền hoặc ngắt truyền động tử động cơ đến hộp số của ô tô nhưng trong những trường hợp cần thiết.",
-                "Dùng để truyền truyền động tử hộp số đến bánh xe chủ động của Ô tô."
+                "Dùng để truyền truyền động tử hộp số đến bánh xe chủ động của ô tô."
             ]
         },
         {
             "number": 253,
-            "title": "Hãy nêu công dụng hộp số của Ô TÔ?",
+            "title": "Hãy nêu công dụng hộp số của ô tô?",
             "options": [
                 "Truyền và tăng mô men xoắn giữa các trục vuông góc nhau, đảm bảo cho các bánh xe chủ động quay với tốc độ khác nhau khi sức cản chuyển động ở bánh xe hai bên không bằng nhau.",
                 "Truyền và thay đổi mô men xoắn giữa các trục không cùng nằm trên một đường thẳng và góc lệch trục luôn thay đổi trong quá trình ô tô chuyển động , chuyển số êm dịu, dễ điều khiển.",
@@ -2693,7 +2693,7 @@
         },
         {
             "number": 291,
-            "title": "Khi gặp biển nào xe được rẽ trál?",
+            "title": "Khi gặp biển nào xe được rẽ trái?",
             "images": [
             ],
             "options": [
@@ -2871,7 +2871,7 @@
         },
         {
             "number": 307,
-            "title": "Biển nào báo hiệu đường dành cho ôtô?",
+            "title": "Biển nào báo hiệu đường dành cho ô tô?",
             "images": [
             ],
             "options": [
@@ -3085,7 +3085,7 @@
             ],
             "options": [
                 "Cấm xe cơ giới (trừ xe ưu tiên theo luật định) đi thẳng.",
-                "Cấm xe ôtô và môtô (trừ xe ưu tiên theo luật định) đi về bên trái và bên phải.",
+                "Cấm xe ô tô và mô tô (trừ xe ưu tiên theo luật định) đi về bên trái và bên phải.",
                 "Hướng trải và phải không cấm xe cơ giới."
             ]
         },
@@ -3671,7 +3671,7 @@
                 "img/377.png"
             ],
             "options": [
-                "Cà hai xe.",
+                "Cả hai xe.",
                 "Không xe nào vi phạm.",
                 "Chỉ xe mô tô vi phạm.",
                 "Chỉ xe tải vi phạm."
@@ -4384,7 +4384,7 @@
                 "img/436.png"
             ],
             "options": [
-                "Xe của bạn, môtô, xe con.",
+                "Xe của bạn, mô tô, xe con.",
                 "Xe con, xe của bạn, mô tô.",
                 "Mô tô, xe con, xe của bạn."
             ]

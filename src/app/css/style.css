@@ -23,7 +23,7 @@
 .app-question li img {
     display: block;
     padding-bottom: 10px;
-    width: 100%;
+    /*width: 100%;*/
 }
 .app-question li span {
     font-size: 30px;

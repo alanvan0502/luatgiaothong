@@ -85,16 +85,14 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th style="width: 100px;">Phương Án</th>
-                                        <th>Nội Dung</th>
+                                        <th>Phương Án</th>
                                         <th style="width: 75px;">Bạn Chọn</th>
                                         <th style="width: 50px;" ng-show="done">Đáp Án</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr ng-repeat="option in questions[currentQuestionIndex].options">
-                                        <td style="text-align: center"><span class="badge badge-info">{{ $index + 1 }}</span></td>
-                                        <td>{{ option }}</td>
+                                        <td><span class="badge badge-info">{{ $index + 1 }}</span> &mdash; {{ option }}</td>
                                         <td><i class="icon-check" ng-show="questions[currentQuestionIndex]['answers'].indexOf($index + 1) != -1"></i></td>
                                         <td ng-show="done">
                                             <i class="icon-ok" ng-show="questions[currentQuestionIndex]['correct_answers'].indexOf($index + 1) != -1"></i>
