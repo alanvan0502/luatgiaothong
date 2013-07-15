@@ -43,11 +43,11 @@
         },
         {
             "number": 5,
-            "title": "Khái niệm 'làn đường' được hlểu như thể nào là đúng?",
+            "title": "Khái niệm 'làn đường' được hiểu như thể nào là đúng?",
             "options": [
                 "Là một phần của đường được chia theo chiều ngang của đường, có bề rộng đủ cho xe đỗ an toàn.",
                 "Là một phần của đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn.",
-                "Cả 2 ý trên"
+                "Cả hai ý trên."
             ]
         },
         {
@@ -121,7 +121,7 @@
         },
         {
             "number": 14,
-            "title": "Khái niệm 'phương tiện giao thông cơ giới đường bộ' được hlểu thể nào là đúng?",
+            "title": "Khái niệm 'phương tiện giao thông cơ giới đường bộ' được hiểu thể nào là đúng?",
             "options": [
                 "Gồm xe ô tô; máy kéo; xe mô tô hai bánh; xe mô tô ba bánh; xe gắn máy; xe cơ giới dùng cho người khuyết tật và xe máy chuyên dùng.",
                 "Gồm xe ô tô; máy kéo; rơ moóc hoặc sơ mi rơ moóc được kéo bởi xe ô tô, máy kéo; xe mô tô hai bánh; xe mô tô ba bánh, xe gắn máy (kể cả xe máy điện) và các loại xe tương tự."
@@ -129,7 +129,7 @@
         },
         {
             "number": 15,
-            "title": "Khái niệm 'phương tiện giao thông thô sơ đường bộ' được hlểu thể nào là đúng?",
+            "title": "Khái niệm 'phương tiện giao thông thô sơ đường bộ' được hiểu thể nào là đúng?",
             "options": [
                 "Gồm xe đạp (kể cả xe đạp máy), xe xích lô, xe lăn dùng cho người khuyết tật, xe súc vật kéo và các loại xe tương tự.",
                 "Gồm xe ô tô; máy kéo; xe mô tô hai bánh; xe mô tô ba bánh; xe gắn máy; xe cơ giới dùng cho người khuyết tật và xe máy chuyên dùng.",
@@ -185,7 +185,7 @@
             "options": [
 				"Là trạng thái đứng yên của phương tiện giao thông có giới hạn trong một khoảng thời gian cần thiết đủ để cho người lên, xuống phương tiện đó, xếp dỡ hàng hóa hoặc thực hiện công việc khác.",
 				"Là trạng thái đứng yên của phương tiện giao thông không giới hạn thời gian.",
-				"Cả 2 ý nêu trên."
+				"Cả hai ý nêu trên."
             ]
         },
         {
@@ -227,7 +227,7 @@
             "title": "Người điểu khiển xe ô tô, máy kéo, xe máy chuyên dùng trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt qua bao nhiêu thì bị cấm?",
             "options": [
                 "Người điều khiển xe ô tô, máy kéo, xe máy chuyên dùng trên đường mà trong máu có nồng độ cồn vượt quá 50 miligam/100 mililít máu hoặc 0,25 miligam/1 lít khí thở.",
-                "Người điều khiển xe ô tô, máy kéo, xe máy chuyên dùng trên đường mà trong máu hoặc hơi thở có nông độ cồn.",
+                "Người điều khiển xe ô tô, máy kéo, xe máy chuyên dùng trên đường mà trong máu hoặc hơi thở có nồng độ cồn.",
                 "Người điều khiển xe ô tô, máy kéo, xe máy chuyên dùng trên đường mà trong máu có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc 40 miligam/1 lít khí thở."
             ]
         },
@@ -1093,7 +1093,7 @@
             "title": "Khi lái xe trên đường vắng mà cảm thấy buồn nôn, nên chọn cách xử lý như thế nào cho phù hợp?",
             "options": [
                 "Tăng tốc độ kết hợp với nghe nhạc để đi tiếp.",
-                "Dừng xe và nghĩ cho đến khi hết buồn ngủ.",
+                "Dừng xe và nghỉ cho đến khi hết buồn ngủ.",
                 "Sử dụng một ít rượu và bia để hết buồn ngủ và đi tiếp."
             ]
         },
@@ -1730,7 +1730,7 @@
             "options": [
                 "Ðiều khiển xe đi trên phần đường, làn đường có ít phương tiện tham gia giao thòng, đội mũ bảo hiểm Ở nơi có biển báo bắt buộc đội mũ bào hiểm.",
                 "Chấp hành quy định về tốc độ, đèn tín hiệu, biển báo hiệu, vạch kẻ đường khi lái xe.",
-                "Chấp hành hiệu lệnh, chĩ dãn của người điều khiển giao thông; nhường đường cho người đi bỘ, người già, trẻ em, người khuyết tật.",
+                "Chấp hành hiệu lệnh, chỉ dãn của người điều khiển giao thông; nhường đường cho người đi bỘ, người già, trẻ em, người khuyết tật.",
                 "Cả ba ý nêu trên."
             ]
         },
@@ -2573,7 +2573,7 @@
         },
         {
             "number": 279,
-            "title": "Biển nào chĩ dẫn được ưu tiên qua đường hẹp?",
+            "title": "Biển nào chỉ dẫn được ưu tiên qua đường hẹp?",
             "images": [
             ],
             "options": [
