@@ -1509,6 +1509,11 @@
         {
             "number": 171,
             "title": "Những ký hiệu hàng hóa dưới dãy, ký hiệu nào chống mưa?",
+            "images": [
+                "img/171.1.png",
+                "img/171.2.png",
+                "img/171.3.png"
+            ],
             "options": [
                 "Hình 1",
                 "Hình 2",
@@ -1518,8 +1523,11 @@
         {
             "number": 172,
             "title": "Ký hiệu chuyên dùng nào biểu hiện hàng chuyên chở phải tránh ánh nắng mặt trời?",
+            "images": [
+                "img/172.1.png",
+                "img/172.2.png"
+            ],
             "options": [
-
                 "Hình 2.",
                 "Hình 1."
             ]
@@ -1527,6 +1535,10 @@
         {
             "number": 173,
             "title": "Hình nào dưới đây biểu hiện hàng chuyên chở dễ vỡ phải cẩn thận?",
+            "images": [
+                "img/173.1.png",
+                "img/173.2.png"
+            ],
             "options": [
                 "Hình 1.",
                 "Hình 2."
@@ -1536,6 +1548,11 @@
         {
             "number": 174,
             "title": "Hình nào dưới đây đòi hỏi hàng phải xếp theo hướng thẳng đứng?",
+            "images": [
+                "img/174.1.png",
+                "img/174.2.png",
+                "img/174.3.png"
+            ],
             "options": [
                 "Hình 1.",
                 "Hình 2.",
@@ -1545,6 +1562,10 @@
         {
             "number": 175,
             "title": "Hình nào dưới đây biểu hiện hàng chuyên chở là chất lỏng?",
+            "images": [
+                "img/175.1.png",
+                "img/175.2.png"
+            ],
             "options": [
                 "Hình 1.",
                 "Hình 2."
