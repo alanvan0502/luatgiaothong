@@ -2318,6 +2318,9 @@
             "number": 257,
             "title": "Gặp biển nào người lái xe phải nhường đường cho người đi bộ?",
             "images": [
+                "img/sign/224.png",
+                "img/sign/112.png",
+                "img/sign/305.png"
             ],
             "options": [
                 "Biển 1.",
