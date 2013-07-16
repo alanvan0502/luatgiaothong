@@ -165,7 +165,7 @@
             "title": "Khái niệm 'người điều khiển giao thông' được hiểu như thế nào là đúng?",
             "options": [
 				"Là người điều khiển phương tiện tham gia giao thông.",
-				"Là người được giao nhiệm vụ hướng dãn giao thông tại nơi thi công, nơi ùn tắc giao thông, ở bến phà, tại cầu đuờng bộ đi chung với đường sắt.",
+				"Là người được giao nhiệm vụ hướng dẫn giao thông tại nơi thi công, nơi ùn tắc giao thông, ở bến phà, tại cầu đuờng bộ đi chung với đường sắt.",
 				"Là cảnh sát giao thông.",
 				"Tất cả các ý nêu trên."
             ]
@@ -469,7 +469,7 @@
         },
         {
             "number": 54,
-            "title": "Tại nơi đường giao nhau, khi người đlểu khiển giao thông ra hiệu lệnh bằng hai tay hoặc một tay giang ngang để báo hiệu thì người tham gia giao thông phải đi như thể nào là đúng quy tắc giao thông?",
+            "title": "Tại nơi đường giao nhau, khi người điều khiển giao thông ra hiệu lệnh bằng hai tay hoặc một tay giang ngang để báo hiệu thì người tham gia giao thông phải đi như thể nào là đúng quy tắc giao thông?",
             "options": [
                 "Người tham gia giao thông ở phía trước và ở phía sau người điều khiển giao thông phải dừng lại; người tham gia giao thông ở phía bên phải và bên trái người điều khiển được đi.",
                 "Người tham gia giao thông ở phía trước và ở phía sau người điều khiển giao thông được đi thẳng; người tham gia giao thông ở phía bên phải và bên trái người điều khiển được đi thẳng và rẽ phải."
@@ -1054,7 +1054,7 @@
         },
         {
             "number": 120,
-            "title": "Người có giấy phép lái xe hạng FE được đlểu khiển các loại xe nào?",
+            "title": "Người có giấy phép lái xe hạng FE được điều khiển các loại xe nào?",
             "options": [
                 "Các loại xe được quy định tại giấy phép lái xe hạng E có kéo rơ moóc và được điều khiển các loại xe: ô tô chở khách nối toa và các loại xe quy định cho giấy phép lái xe hạng B1, B2, C, D, FB2, FD.",
                 "Các loại xe được quy định tại giấy phép lái xe hạng E có kéo rơ moóc, đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe: ô tô chở khách nối toa và các loại xe quy định cho giấy phép lái xe hạng B1, B2, C, D, FB2, FD.",
@@ -1183,7 +1183,7 @@
         },
         {
             "number": 134,
-            "title": "Trên đường bộ trong khu vực đông dãn cư, loại xe nào tham gia giao thông với tốc độ tối đa cho phép là 40km/h?",
+            "title": "Trên đường bộ trong khu vực đông dân cư, loại xe nào tham gia giao thông với tốc độ tối đa cho phép là 40km/h?",
             "options": [
                 "Ô tô chở người trên 30 chỗ ngồi, ô tô tải có trọng tải từ 3500 kg trở lên, ô tô sơ mi rơ moóc, ô tô kéo rơ moóc, ô tô kéo xe khác, ô tô chuyên dùng, xe mô tô, xe gắn máy.",
                 "Ô tô chở người đến 30 chỗ ngồi, ô tô tải có trọng tải dưới 3500 kg.",
@@ -1192,7 +1192,7 @@
         },
         {
             "number": 135,
-            "title": "Trên đường bộ trong khu vực đông dãn cư, loại xe cơ giới nào tham gia giao thông với tốc độ tối đa cho phép là 50 km/h?",
+            "title": "Trên đường bộ trong khu vực đông dân cư, loại xe cơ giới nào tham gia giao thông với tốc độ tối đa cho phép là 50 km/h?",
             "options": [
                 "Ô tô chở người trên 30 chỗ ngồi, ô tô tải có trọng tải từ 3500 kg trở lên, ô tô sơ mi rơ moóc, ô tô kéo rơ moóc, ô tô kéo xe khác, ô tô chuyên dùng, xe mô tô, xe gắn máy.",
                 "Xe máy kéo, xe công nông, xe lam, xe lôi máy, xe xích lô máy, xe ba gác máy, xe máy chuyên dùng và các loại xe tương tự (loại đang được phép hoạt động).",
@@ -1730,7 +1730,7 @@
             "options": [
                 "Ðiều khiển xe đi trên phần đường, làn đường có ít phương tiện tham gia giao thòng, đội mũ bảo hiểm Ở nơi có biển báo bắt buộc đội mũ bào hiểm.",
                 "Chấp hành quy định về tốc độ, đèn tín hiệu, biển báo hiệu, vạch kẻ đường khi lái xe.",
-                "Chấp hành hiệu lệnh, chỉ dãn của người điều khiển giao thông; nhường đường cho người đi bỘ, người già, trẻ em, người khuyết tật.",
+                "Chấp hành hiệu lệnh, chỉ dẫn của người điều khiển giao thông; nhường đường cho người đi bỘ, người già, trẻ em, người khuyết tật.",
                 "Cả ba ý nêu trên."
             ]
         },
@@ -2179,7 +2179,6 @@
                 "Không nhỏ hơn 80dB (A), không lớn hơn 105dB (A).",
                 "Không nhỏ hơn 70dB (A), không lớn hơn 90dB (A)."
             ]
-
         },
         {
             "number": 242,
@@ -3389,7 +3388,7 @@
             ],
             "options": [
                 "Biển chỉ dẫn hết hiệu lực khu vực cấm đỗ xe theo giờ trên các tuyến đường đối ngoại.",
-                "Biển chỉ dãn hết hiệu lực khu vực đỗ xe trên các tuyến đường đối ngoại.",
+                "Biển chỉ dẫn hết hiệu lực khu vực đỗ xe trên các tuyến đường đối ngoại.",
                 "Biển chỉ dẫn khu vực đỗ xe trên các tuyến đường đối ngoại."
             ]
         },
